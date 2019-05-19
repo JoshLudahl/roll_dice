@@ -1,4 +1,5 @@
 package com.example.myapplication
+
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
@@ -23,8 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         val randomInt = Random().nextInt(6) + 1
-
-        println(randomInt)
 
         val drawableResource = when (randomInt) {
             1 -> R.drawable.dice_1
